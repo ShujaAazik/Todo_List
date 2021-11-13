@@ -1,24 +1,16 @@
 import React from "react";
 import reactDom from "react-dom";
-
-
-class Todo extends React.Component {
-	contructor(props) {
-		super(props);
-	}
-	render() {
-    return(
-      <h1>Shuja</h1>
-    );
-  }
-}
+import './App.css';
 
 function App() {
   return (
 		<div>
-			<h1>ToDo App</h1>
-      <input type="text"></input>
-
+			<div className='Input-container'>
+				<h1>ToDo List</h1>
+				<input type='text'></input>
+				<button>Add</button>
+			</div>
+			<div className='Todo-list-container'></div>
 		</div>
 	);
 }
