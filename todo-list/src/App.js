@@ -20,11 +20,13 @@ function App() {
 }
 
 function Addtolist(props){
-	return(
+	return (
 		<ul>
-			{
-				props.value.map(e => <li>{e}</li>)
-			}
+			<div className='Todo-list-element'>
+				{props.value.map((e) => (
+					<li>{e}<button onClick={()=>(props.value.splice(props.value.indexOf(e)))}>X</button></li>
+				))}
+			</div>
 		</ul>
 	);
 }

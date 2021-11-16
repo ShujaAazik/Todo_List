@@ -25,3 +25,8 @@ button {
 	margin-top: 8%;
 	margin-left: 5%;
 }
+
+.Todo-list-element {
+	display: flex;
+	flex-direction: column;
+}
