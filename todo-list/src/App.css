@@ -11,6 +11,15 @@ input {
 	font-size: xx-large;
 }
 
+.Todo-text {
+	width: 75%;
+	overflow-wrap: break-word;
+}
+
+.Todo-delete {
+	width: 25%;
+}
+
 button {
 	font-size: xx-large;
 	margin-top: 5%;
